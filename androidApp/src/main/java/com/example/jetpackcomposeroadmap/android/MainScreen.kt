@@ -20,14 +20,15 @@ fun MainScreen(navController: NavController) {
         horizontalAlignment = Alignment.Start,
         verticalArrangement = Arrangement.Top
     ) {
+
         Text(text = "Pickers", fontWeight = FontWeight.Bold, color = Color.Red)
-        Spacer(modifier = Modifier.height(20.dp))
 
         Button(onClick = {
             navController.navigate("contact_picker")
         }) {
             Text(text = "Contact Picker")
         }
+
         Spacer(modifier = Modifier.height(20.dp))
 
         Button(onClick = {
@@ -35,6 +36,7 @@ fun MainScreen(navController: NavController) {
         }) {
             Text(text = "Photo and Media Picker")
         }
+
         Spacer(modifier = Modifier.height(20.dp))
 
         Button(onClick = {
@@ -42,6 +44,27 @@ fun MainScreen(navController: NavController) {
         }) {
             Text(text = "Time and Date Picker")
         }
+
         Spacer(modifier = Modifier.height(20.dp))
+
+        Text(text = "SearchBar", fontWeight = FontWeight.Bold, color = Color.Red)
+
+        Button(onClick = {
+            navController.navigate("searchbar_screen")
+        }) {
+            Text(text = "Search Bar")
+        }
+        Spacer(modifier = Modifier.height(20.dp))
+
+        Text(text = "Tooltips", fontWeight = FontWeight.Bold, color = Color.Red)
+
+        Button(onClick = {
+            navController.navigate("taptargetviewtooltips_screen")
+        }) {
+            Text(text = "TapTargetViewToolTips")
+        }
+        Spacer(modifier = Modifier.height(20.dp))
+
+
     }
 }

@@ -14,13 +14,14 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
+import androidx.navigation.NavController
 import com.getkeepsafe.taptargetview.TapTarget
 import com.getkeepsafe.taptargetview.TapTargetView
 
 
 @SuppressLint("UnusedMaterialScaffoldPaddingParameter")
 @Composable
-fun TapTargetViewToolTips() {
+fun TapTargetViewToolTips(navController: NavController) {
     val context = LocalContext.current
 
     val scaffoldState = rememberScaffoldState(rememberDrawerState(DrawerValue.Open))

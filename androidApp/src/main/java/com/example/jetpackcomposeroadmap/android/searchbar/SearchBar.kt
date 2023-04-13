@@ -10,10 +10,11 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
+import androidx.navigation.NavController
 
 @SuppressLint("UnrememberedMutableState", "UnusedMaterialScaffoldPaddingParameter")
 @Composable
-fun SearchBar() {
+fun SearchBar(navController: NavController) {
 
     val context = LocalContext.current
 
