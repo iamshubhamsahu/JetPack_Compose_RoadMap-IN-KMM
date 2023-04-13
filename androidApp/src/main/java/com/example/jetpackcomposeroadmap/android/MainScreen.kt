@@ -24,7 +24,7 @@ fun MainScreen(navController: NavController) {
         Text(text = "Pickers", fontWeight = FontWeight.Bold, color = Color.Red)
 
         Button(onClick = {
-            navController.navigate("contact_picker")
+            navController.navigate("contact_screen")
         }) {
             Text(text = "Contact Picker")
         }
@@ -32,7 +32,7 @@ fun MainScreen(navController: NavController) {
         Spacer(modifier = Modifier.height(20.dp))
 
         Button(onClick = {
-            navController.navigate("photoandmedia_picker")
+            navController.navigate("photoandmedia_screen")
         }) {
             Text(text = "Photo and Media Picker")
         }
@@ -40,7 +40,7 @@ fun MainScreen(navController: NavController) {
         Spacer(modifier = Modifier.height(20.dp))
 
         Button(onClick = {
-            navController.navigate("timeanddate_picker")
+            navController.navigate("timeanddate_screen")
         }) {
             Text(text = "Time and Date Picker")
         }

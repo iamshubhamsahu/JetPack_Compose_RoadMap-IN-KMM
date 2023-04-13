@@ -11,12 +11,23 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
+import com.google.android.gms.maps.GoogleMap
+import com.google.android.gms.maps.model.CameraPosition
+import com.google.android.gms.maps.model.LatLng
+import com.google.android.gms.maps.model.Marker
+import com.google.maps.android.compose.GoogleMap
+import com.google.maps.android.compose.Marker
+import com.google.maps.android.compose.rememberCameraPositionState
 
 @SuppressLint("UnrememberedMutableState", "UnusedMaterialScaffoldPaddingParameter")
 @Composable
 fun SearchBar(navController: NavController) {
 
     val context = LocalContext.current
+    val india = LatLng(20.5937,78.9629)
+    val cameraPosition = rememberCameraPositionState{
+        position = CameraPosition.fromLatLngZoom(india,10f)
+    }
 
 
     val scaffoldState = rememberScaffoldState(rememberDrawerState(DrawerValue.Open))
@@ -38,17 +49,21 @@ fun SearchBar(navController: NavController) {
         },
 
         content = {
-            Column(
-                modifier = Modifier
-                    .fillMaxSize()
-                    .padding(30.dp),
-                horizontalAlignment = Alignment.Start,
-                verticalArrangement = Arrangement.Top
-            ) {
-
+//            Column(
+//                modifier = Modifier
+//                    .fillMaxSize()
+//                    .padding(30.dp),
+//                horizontalAlignment = Alignment.Start,
+//                verticalArrangement = Arrangement.Top
+//            ) {}
+            GoogleMap(
+                modifier = Modifier.fillMaxSize(),
+                cameraPositionState = cameraPosition
+            ){
 
 
             }
+
         }
     )
 

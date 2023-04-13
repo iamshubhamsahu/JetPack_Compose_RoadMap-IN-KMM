@@ -11,12 +11,15 @@ import com.example.jetpackcomposeroadmap.android.navigation.ToolstipsNav
 
 @Composable
 fun SetUpNavGraph() {
+
     val navController = rememberNavController()
-    NavHost(navController, "main_screen") {
+
+    NavHost(navController = navController, startDestination = "main_screen") {
 
         composable(route = "main_screen") {
             MainScreen(navController = navController)
         }
+
         PickerNav(navController)
         SearchBarNav(navController)
         ToolstipsNav(navController)
