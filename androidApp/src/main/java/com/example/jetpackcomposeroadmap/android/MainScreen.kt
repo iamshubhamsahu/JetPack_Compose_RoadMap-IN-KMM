@@ -21,6 +21,8 @@ fun MainScreen(navController: NavController) {
         verticalArrangement = Arrangement.Top
     ) {
 
+        Text(text = "Material 3", fontWeight = FontWeight.Bold, color = Color.Blue)
+
         Text(text = "Pickers", fontWeight = FontWeight.Bold, color = Color.Red)
 
         Button(onClick = {
@@ -62,6 +64,17 @@ fun MainScreen(navController: NavController) {
             navController.navigate("taptargetviewtooltips_screen")
         }) {
             Text(text = "TapTargetViewToolTips")
+        }
+        Spacer(modifier = Modifier.height(20.dp))
+
+        Text(text = "Foundation", fontWeight = FontWeight.Bold, color = Color.Blue)
+
+        Text(text = "Lazy item animations", fontWeight = FontWeight.Bold, color = Color.Red)
+
+        Button(onClick = {
+            navController.navigate("lazy_item_animations_screen")
+        }) {
+            Text(text = "Lazy Item Animations")
         }
         Spacer(modifier = Modifier.height(20.dp))
 

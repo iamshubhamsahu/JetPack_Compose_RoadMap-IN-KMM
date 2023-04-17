@@ -91,4 +91,5 @@ dependencies {
     // Optionally, you can include the widgets library for ScaleBar, etc.
     implementation("com.google.maps.android:maps-compose-widgets:2.11.2")
 
+
 }
