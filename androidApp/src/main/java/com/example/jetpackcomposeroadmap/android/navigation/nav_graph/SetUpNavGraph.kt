@@ -9,6 +9,7 @@ import com.example.jetpackcomposeroadmap.android.navigation.LazyItemAnimationNav
 import com.example.jetpackcomposeroadmap.android.navigation.PickerNav
 import com.example.jetpackcomposeroadmap.android.navigation.SearchBarNav
 import com.example.jetpackcomposeroadmap.android.navigation.ToolstipsNav
+import com.example.jetpackcomposeroadmap.android.navigation.UINav
 
 @Composable
 fun SetUpNavGraph() {
@@ -25,6 +26,7 @@ fun SetUpNavGraph() {
         SearchBarNav(navController)
         ToolstipsNav(navController)
         LazyItemAnimationNav(navController)
+        UINav(navController)
 
     }
 }

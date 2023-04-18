@@ -31,7 +31,7 @@ fun MainScreen(navController: NavController) {
             Text(text = "Contact Picker")
         }
 
-        Spacer(modifier = Modifier.height(20.dp))
+        Spacer(modifier = Modifier.height(5.dp))
 
         Button(onClick = {
             navController.navigate("photoandmedia_screen")
@@ -39,7 +39,7 @@ fun MainScreen(navController: NavController) {
             Text(text = "Photo and Media Picker")
         }
 
-        Spacer(modifier = Modifier.height(20.dp))
+        Spacer(modifier = Modifier.height(5.dp))
 
         Button(onClick = {
             navController.navigate("timeanddate_screen")
@@ -47,7 +47,7 @@ fun MainScreen(navController: NavController) {
             Text(text = "Time and Date Picker")
         }
 
-        Spacer(modifier = Modifier.height(20.dp))
+        Spacer(modifier = Modifier.height(5.dp))
 
         Text(text = "SearchBar", fontWeight = FontWeight.Bold, color = Color.Red)
 
@@ -56,7 +56,7 @@ fun MainScreen(navController: NavController) {
         }) {
             Text(text = "Search Bar")
         }
-        Spacer(modifier = Modifier.height(20.dp))
+        Spacer(modifier = Modifier.height(5.dp))
 
         Text(text = "Tooltips", fontWeight = FontWeight.Bold, color = Color.Red)
 
@@ -65,7 +65,7 @@ fun MainScreen(navController: NavController) {
         }) {
             Text(text = "TapTargetViewToolTips")
         }
-        Spacer(modifier = Modifier.height(20.dp))
+        Spacer(modifier = Modifier.height(5.dp))
 
         Text(text = "Foundation", fontWeight = FontWeight.Bold, color = Color.Blue)
 
@@ -76,7 +76,18 @@ fun MainScreen(navController: NavController) {
         }) {
             Text(text = "Lazy Item Animations")
         }
-        Spacer(modifier = Modifier.height(20.dp))
+        Spacer(modifier = Modifier.height(5.dp))
+
+        Text(text = "UI", fontWeight = FontWeight.Bold, color = Color.Blue)
+
+        Text(text = "Autofill", fontWeight = FontWeight.Bold, color = Color.Red)
+
+        Button(onClick = {
+            navController.navigate("autofill_screen")
+        }) {
+            Text(text = "Auto Fill")
+        }
+        Spacer(modifier = Modifier.height(5.dp))
 
 
     }
